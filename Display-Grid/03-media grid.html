@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.main
+		{
+			display: grid;
+			grid-template-columns: 8fr 2fr;
+		}
+		.main .x 
+		{	
+			border: 1px solid;
+
+		}
+		@media(max-width: 1100px)
+		{
+			.main{grid-template-columns: 1fr 9fr}
+		}
+		@media(max-width: 900px)
+		{
+			.main{grid-template-columns: 1fr}
+		}
+		@media(max-width: 700px)
+		{
+			.main{grid-template-columns: 7fr 3fr}
+			.main .p1{background: lightblue;text-align: center;}
+			.main .p2{background: coral;}
+		}
+
+		@media(max-width: 500px)
+		{
+			.main{grid-template-columns: 1fr}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+
+		<div class="x p1">part 1</div>
+		<div class="x p2">part 2</div>
+		
+	</div>
+
+</body>
+</html>

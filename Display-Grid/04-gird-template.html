@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.main
+		{
+			display: grid;
+			grid-template-rows: 150px 500px;
+		}
+		.main .header
+		{
+			background: lightblue;
+			display: grid;
+			grid-template-columns: 2fr 5fr 3fr;
+		}
+		.main .header .logo
+		{
+			background: seagreen;
+			padding: 35px;
+		}
+		.main .header .navigate
+		{
+			background: lightgray;
+			padding: 75px 0 0 20px;
+		}
+		.main .header .navigate li
+		{
+			list-style: none;
+			display: inline;
+			margin-right: 20px;
+		}
+		.main .header .navigate li i 
+		{
+			font-size: 25px;
+			border: 3px solid blue;
+			border-radius: 50%;
+			padding: 10px;
+		}
+
+		.main .header .navigate li a
+		{
+			text-decoration: none;
+			color: black;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.main .header .info
+		{
+			background: lightsalmon;
+			padding: 75px 0 0 20px;
+		}
+
+		.main .slider
+		{
+			background: coral;
+		}
+
+		@media(max-width: 500px)
+		{
+			.main{grid-template-rows: auto 500px;} 
+
+			.main .header{grid-template-columns: 1fr;}
+			.main .header .info	{padding: 35px 0 35px 20px;text-align: center;}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="header">
+
+			<div class="logo">
+				<img src="https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/uploads/2021/09/Logo_2-%D1%85.png" height="100%" width="100%">
+			</div>
+
+			<div class="navigate">
+
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Pages</a></li>
+					<li><a href="">Portfolio</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Shop</a></li>
+					<li><a href="">Contact</a></li>
+					<li style="float: right;"><i class="fa fa-phone"></i></li>
+				</ul>
+
+			</div>
+
+
+			<div class="info">
+				Have any Questions?<br>
+				+1800 -89789 -980
+			</div>
+
+		</div>
+		<div class="slider">2</div>
+		
+		
+		
+	</div>
+
+</body>
+</html>
